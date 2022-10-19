@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3A960"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnPersegi"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:iconTint="@color/black"
+        android:text="a"
+        app:icon="@drawable/square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLSegitiga"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:iconTint="@color/black"
+        android:text="a"
+        app:icon="@drawable/triangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLingkaran"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/btnPersegi" />
+
+    <Button
+        android:id="@+id/btnLingkaran"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:iconTint="@color/black"
+        android:text="a"
+        app:icon="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
